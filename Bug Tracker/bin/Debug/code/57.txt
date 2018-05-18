@@ -1,0 +1,7 @@
+string appPath = Path.GetDirectoryName(Application.ExecutablePath) + @"\code_image\";
+                    Bug_Tracker.Model.Image image = new Bug_Tracker.Model.Image
+                    {
+                        ImagePath = "code_image",
+                        ImageName = ImageName,
+                        BugId = bug.BugId
+                    };

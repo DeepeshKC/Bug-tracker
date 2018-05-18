@@ -1,0 +1,30 @@
+ public void Insert(SourceControl t)
+        {
+            conn.Open();
+            SqlTransaction trans = conn.BeginTransaction();
+
+            try
+            {
+                SqlCommand sql = new SqlCommand(null, conn);
+                sql.Transaction = trans;
+                sql.CommandText = "INSERT INTO tbl_source_control VALUES(@link, @start_line, @end_line, @bug_id)";
+                sql.Prepare();
+                sql.Parameters.AddWithValue("@link", t.Link);
+                sql.Parameters.AddWithValue("@start_line", t.StartLine);
+                sql.Parameters.AddWithValue("@end_line", t.EndLine);
+                sql.Parameters.AddWithValue("@bug_id", t.BugId);
+
+                sql.ExecuteNonQuery();
+
+                trans.Commit();
+            }
+            catch (SqlException ex)
+            {
+                trans.Rollback();
+                throw ex;
+            }
+            finally
+            {
+                conn.Close();
+            }
+        }

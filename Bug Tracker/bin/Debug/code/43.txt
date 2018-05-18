@@ -1,0 +1,9 @@
+
+
+SourceControl sourceControl = new SourceControl
+                {
+                    Link = textBox1.Text,
+                    StartLine = Convert.ToInt32(textBox6.Text),
+                    EndLine = Convert.ToInt32(textBox7.Text),
+                    BugId = bug.BugId
+                };

@@ -1,0 +1,10 @@
+Bug bug = new Bug
+            {
+                ProjectName = comboBox1.SelectedItem.ToString(),
+                ClassName = textBox2.Text,
+                MethodName = textBox3.Text,
+                StartLine = Convert.ToInt16(textBox4.Text),
+                EndLine = Convert.ToInt16(textBox5.Text),
+                ProgrammerId = Login.userId,
+                Status = "0"
+            };

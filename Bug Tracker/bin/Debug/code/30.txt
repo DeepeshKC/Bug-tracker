@@ -1,0 +1,13 @@
+ pictureBox.Location = new System.Drawing.Point(391, 3);
+                pictureBox.Name = pictureBox + bug.BugId.ToString();
+                pictureBox.Size = new System.Drawing.Size(141, 94);
+                pictureBox.TabIndex = 0;
+                pictureBox.TabStop = false;
+                ((System.ComponentModel.ISupportInitialize)(pictureBox)).BeginInit();
+
+                pictureBox.Image = new Bitmap(Path.Combine(bug.Images.ImagePath + "/", bug.Images.ImageName));
+                pictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
+
+                panel.ResumeLayout(false);
+                panel.PerformLayout();
+                ((System.ComponentModel.ISupportInitialize)(pictureBox)).EndInit();
