@@ -72,10 +72,13 @@
     <Compile Include="Common\LoopPanel.cs" />
     <Compile Include="DAOImpl\GenericDaoImp.cs" />
     <Compile Include="DAO\AdminDAO.cs" />
+    <Compile Include="DAO\BugDAO.cs" />
+    <Compile Include="DAO\BugInformationDAO.cs" />
     <Compile Include="DAO\GenericDAO.cs" />
     <Compile Include="DAO\ProgrammerDAO.cs" />
     <Compile Include="DAO\ProjectDAO.cs" />
     <Compile Include="DAO\ProjectProgrammerDAO.cs" />
+    <Compile Include="DAO\SourceControlDAO.cs" />
     <Compile Include="DAO\TesterDAO.cs" />
     <Compile Include="DBConnection.cs" />
     <Compile Include="Form1.cs">
@@ -111,6 +114,12 @@
     <Compile Include="Views\AdminRegister.Designer.cs">
       <DependentUpon>AdminRegister.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\Bug.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Bug.Designer.cs">
+      <DependentUpon>Bug.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -123,11 +132,23 @@
     <Compile Include="Views\LoginAdmin.Designer.cs">
       <DependentUpon>LoginAdmin.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\Register Account.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Views\Register Account.Designer.cs">
       <DependentUpon>Register Account.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\UpdateBug.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\UpdateBug.Designer.cs">
+      <DependentUpon>UpdateBug.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -148,14 +169,23 @@
     <EmbeddedResource Include="Views\AdminRegister.resx">
       <DependentUpon>AdminRegister.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Views\Bug.resx">
+      <DependentUpon>Bug.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\LoginAdmin.resx">
       <DependentUpon>LoginAdmin.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Views\Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\Register Account.resx">
       <DependentUpon>Register Account.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\UpdateBug.resx">
+      <DependentUpon>UpdateBug.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
