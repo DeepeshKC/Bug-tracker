@@ -37,10 +37,10 @@ namespace Bug_Tracker.Views
             panelAssigned.AutoScroll = true;
 
             BugDAO bugDao = new BugDAO();
-
+            //timro class ko name dudyo k tehi vayera ho duitai yeutai vayo k tehi vayera
             try
             {
-                List<Bug> list = bugDao.getAllBugs();
+                List<Bug_Tracker.Model.Bug> list = bugDao.getAllBugs();
                 var newLoopPanel = new LoopPanel();
                 var newUpdateBug = new UpdateBug(false);
                 newLoopPanel.loopPanel(list, panelBugs, this, newUpdateBug);
@@ -54,7 +54,7 @@ namespace Bug_Tracker.Views
 
             try
             {
-                List<Bug> bug = bugDao.GetAllBugsByProgrammerId(Login.userId);
+                List<Bug_Tracker.Model.Bug> bug = bugDao.GetAllBugsByProgrammerId(Login.userId);
                 var newLoopPanel = new LoopPanel();
                 var newUpdateBug = new UpdateBug(true);
                 newLoopPanel.loopPanel(bug, panelAssigned, this, newUpdateBug);

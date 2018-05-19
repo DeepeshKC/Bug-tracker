@@ -75,10 +75,8 @@ namespace Bug_Tracker.Views
                 listView1.Items.Add(p.ProjectId + "," + p.ProjectName);
             }
         }
-        /// <summary>
+   
         /// returns all the programmers
-        /// </summary>
-
         private void GetAllProgrammers()
         {
             ProgrammerDAO dao = new ProgrammerDAO();
@@ -89,15 +87,7 @@ namespace Bug_Tracker.Views
                 comboBox1.Items.Add(l.ProgrammerId + "," + l.FullName);
             }
         }
-
         
-        private void AdminDashboard_Load(object sender, EventArgs e)
-        {
-            button3.Hide();
-            button4.Hide();
-            textBoxUpdate.Hide();
-            GetAllProject();
-        }
 
         private void addUserToComapnyToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -106,7 +96,7 @@ namespace Bug_Tracker.Views
 
         private void logoutToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            new Admin().Show();
+            new LoginAdmin().Show();
             this.Hide();
             Program.adminId = 0;
         }
@@ -130,8 +120,15 @@ namespace Bug_Tracker.Views
                     GetAllProject();
                 }
             }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
             }
-
+        }
+        //maile close button haru haleko xaina milau hai tini haru chahi kaa ?
+        //maile pheri login garnu paryo vane program purai katera kholnu parxa k tyo maile ni milako xaina 
+        //timi mialaune vaye milau vanya k
+        //ok pa bug ko
         private void button4_Click(object sender, EventArgs e)
         {
             string projectName = textBoxUpdate.Text;
@@ -218,6 +215,26 @@ namespace Bug_Tracker.Views
         private void addUserToComapnyToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
 
+        }
+
+        private void AdminDashboard_Load_1(object sender, EventArgs e)
+        {
+            button3.Hide();
+            button4.Hide();
+            textBoxUpdate.Hide();
+            GetAllProject();
+        }
+
+        private void listView1_Click(object sender, EventArgs e)
+        {
+            button3.Show();
+            button4.Show();
+            textBoxUpdate.Show();
+            string[] arr = listView1.SelectedItems[0].ToString().Split(',');
+            projectId = Convert.ToInt32(arr[0]);
+
+            listBox1.Items.Clear();
+            GetAllProgrammer();
         }
     }
 }

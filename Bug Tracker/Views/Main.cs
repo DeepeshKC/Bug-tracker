@@ -230,7 +230,7 @@ namespace Bug_Tracker.Views
             } else
             {
                 //bug
-                Bug bug = new Bug
+                Bug_Tracker.Model.Bug bug = new Bug_Tracker.Model.Bug
                 {
                     ProjectName = comboBox1.SelectedItem.ToString(),
                     ClassName = textBox2.Text,
@@ -358,7 +358,7 @@ namespace Bug_Tracker.Views
 
         private void allBugsToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            new Bugs().Show();
+            new Bug().Show();
         }
 
         private void textBox1_KeyUp(object sender, KeyEventArgs e)

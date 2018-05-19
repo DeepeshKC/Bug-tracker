@@ -154,6 +154,7 @@
             this.listView1.Name = "listView1";
             this.listView1.Size = new System.Drawing.Size(238, 303);
             this.listView1.TabIndex = 18;
+            this.listView1.Click += new System.EventHandler(this.listView1_Click);
             this.listView1.SelectedIndexChanged += new System.EventHandler(this.listView1_SelectedIndexChanged);
             // 
             // exitToolStripMenuItem
@@ -253,6 +254,7 @@
             this.Controls.Add(this.menuStrip1);
             this.Name = "AdminDashboard";
             this.Text = "AdminDashboard";
+            this.Load += new System.EventHandler(this.AdminDashboard_Load_1);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.menuStrip1.ResumeLayout(false);

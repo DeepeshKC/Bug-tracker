@@ -60,7 +60,9 @@ namespace Bug_Tracker.Views
                     {
                         userId = new TesterDAO().IsLogin(username, password);
                         this.Hide();
-                        new TesterDashboard().Show();
+                        //new TesterDashboard().Show();
+                        //timle yo banako   xaiana 
+                        //yo banaye paxi tesle uncomment gara hai
                     }
                     else
                     {
@@ -81,6 +83,11 @@ namespace Bug_Tracker.Views
         }
 
         private void loginAsAdminToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void loginAsAdminToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
             this.Hide();
             new LoginAdmin().Show();

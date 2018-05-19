@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using Bug_Tracker.DAO;
+﻿using Bug_Tracker.DAO;
 using Bug_Tracker.Model;
 using System;
 using System.Collections.Generic;

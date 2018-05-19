@@ -1,0 +1,8 @@
+ {
+            string projectName = textBoxUpdate.Text;
+            ProjectDAO projectDAO = new ProjectDAO();
+            Project project = new Project
+            {
+                ProjectId = projectId,
+                ProjectName = projectName
+            };

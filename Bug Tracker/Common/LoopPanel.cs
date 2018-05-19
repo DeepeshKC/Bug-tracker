@@ -20,7 +20,7 @@ namespace Bug_Tracker.Common
         /// <param name="mainPanel"></param>
         /// <param name="closingFrame"></param>
         /// <param name="openingForm"></param>
-        public void loopPanel(List<Bug> list, Panel mainPanel, Form closingFrame, Form openingForm)
+        public void loopPanel(List<Bug_Tracker.Model.Bug> list, Panel mainPanel, Form closingFrame, Form openingForm)
         {
             int x = 56;
             foreach (var bug in list)
