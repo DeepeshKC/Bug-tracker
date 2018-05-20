@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Bug_Tracker.DAOImp
 {
-    abstract class GenericDaoImp<T> : GenericDAO<T>
+   public abstract class GenericDaoImp<T> : GenericDAO<T>
     {
         public bool Delete(int id)
         {

@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Bug_Tracker.DAO
 {
-    class ProjectProgrammerDAO : GenericDAO<ProjectProgrammer>
+    public class ProjectProgrammerDAO : GenericDAO<ProjectProgrammer>
     {
 
         private SqlConnection conn = new DBConnection().GetConnection();

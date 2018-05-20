@@ -47,27 +47,3 @@ C:\Users\D\Documents\Visual Studio 2017\Bug Tracker\Bug Tracker\obj\Debug\Bug Tr
 C:\Users\D\Documents\Visual Studio 2017\Bug Tracker\Bug Tracker\obj\Debug\Bug Tracker.csproj.CopyComplete
 C:\Users\D\Documents\Visual Studio 2017\Bug Tracker\Bug Tracker\obj\Debug\Bug Tracker.exe
 C:\Users\D\Documents\Visual Studio 2017\Bug Tracker\Bug Tracker\obj\Debug\Bug Tracker.pdb
-F:\Study\The British College\C#\Assignment\Bug Tracker\Bug Tracker\obj\Debug\Bug Tracker.csprojAssemblyReference.cache
-F:\Study\The British College\C#\Assignment\Bug Tracker\Bug Tracker\obj\Debug\Bug_Tracker.Form1.resources
-F:\Study\The British College\C#\Assignment\Bug Tracker\Bug Tracker\obj\Debug\Bug_Tracker.Properties.Resources.resources
-F:\Study\The British College\C#\Assignment\Bug Tracker\Bug Tracker\obj\Debug\Bug_Tracker.Views.AdminDashboard.resources
-F:\Study\The British College\C#\Assignment\Bug Tracker\Bug Tracker\obj\Debug\Bug_Tracker.Views.AdminRegister.resources
-F:\Study\The British College\C#\Assignment\Bug Tracker\Bug Tracker\obj\Debug\Bug_Tracker.Views.Bug.resources
-F:\Study\The British College\C#\Assignment\Bug Tracker\Bug Tracker\obj\Debug\Bug_Tracker.Views.Login.resources
-F:\Study\The British College\C#\Assignment\Bug Tracker\Bug Tracker\obj\Debug\Bug_Tracker.Views.LoginAdmin.resources
-F:\Study\The British College\C#\Assignment\Bug Tracker\Bug Tracker\obj\Debug\Bug_Tracker.Views.Main.resources
-F:\Study\The British College\C#\Assignment\Bug Tracker\Bug Tracker\obj\Debug\Bug_Tracker.Views.Register_Account.resources
-F:\Study\The British College\C#\Assignment\Bug Tracker\Bug Tracker\obj\Debug\Bug_Tracker.Views.UpdateBug.resources
-F:\Study\The British College\C#\Assignment\Bug Tracker\Bug Tracker\obj\Debug\Bug Tracker.csproj.GenerateResource.cache
-F:\Study\The British College\C#\Assignment\Bug Tracker\Bug Tracker\obj\Debug\Bug Tracker.csproj.CoreCompileInputs.cache
-F:\Study\The British College\C#\Assignment\Bug Tracker\Bug Tracker\obj\Debug\Bug Tracker.exe
-F:\Study\The British College\C#\Assignment\Bug Tracker\Bug Tracker\obj\Debug\Bug Tracker.pdb
-F:\Study\The British College\C#\Assignment\Bug Tracker\Bug Tracker\obj\Debug\Bug_Tracker.Views.AboutUs.resources
-F:\Study\The British College\C#\Assignment\Bug Tracker\Bug Tracker\bin\Debug\Bug Tracker.exe.config
-F:\Study\The British College\C#\Assignment\Bug Tracker\Bug Tracker\bin\Debug\Bug Tracker.exe
-F:\Study\The British College\C#\Assignment\Bug Tracker\Bug Tracker\bin\Debug\Bug Tracker.pdb
-F:\Study\The British College\C#\Assignment\Bug Tracker\Bug Tracker\bin\Debug\FastColoredTextBox.xml
-F:\Study\The British College\C#\Assignment\Bug Tracker\Bug Tracker\obj\Debug\Bug Tracker.csproj.CopyComplete
-F:\Study\The British College\C#\Assignment\Bug Tracker\Bug Tracker\obj\Debug\Bug_Tracker.Views.CauseSymptomsAndAssign.resources
-F:\Study\The British College\C#\Assignment\Bug Tracker\Bug Tracker\obj\Debug\Bug_Tracker.Views.TesterDashboard.resources
-F:\Study\The British College\C#\Assignment\Bug Tracker\Bug Tracker\bin\Debug\Bug Tracker.xml

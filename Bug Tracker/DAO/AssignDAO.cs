@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Bug_Tracker.DAO
 {
-    class AssignDAO : GenericDAO<Assign>
+    public class AssignDAO : GenericDAO<Assign>
     {
         private SqlConnection conn = new DBConnection().GetConnection();
         public bool Delete(int id)

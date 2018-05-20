@@ -8,7 +8,7 @@ using Bug_Tracker.Model;
 
 namespace Bug_Tracker.DAO
 {
-    class ImageDAO : GenericDAO<Image>
+    public class ImageDAO : GenericDAO<Image>
     {
 
         private SqlConnection conn = new DBConnection().GetConnection();
