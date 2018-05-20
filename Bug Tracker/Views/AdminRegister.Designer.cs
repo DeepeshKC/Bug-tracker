@@ -108,11 +108,12 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(91, 9);
+            this.label4.Location = new System.Drawing.Point(118, 9);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(269, 39);
             this.label4.TabIndex = 23;
             this.label4.Text = "Register Admin";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // label5
             // 

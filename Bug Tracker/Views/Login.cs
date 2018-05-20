@@ -92,5 +92,11 @@ namespace Bug_Tracker.Views
             this.Hide();
             new LoginAdmin().Show();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            new Register_Account().Show();
+        }
     }
 }

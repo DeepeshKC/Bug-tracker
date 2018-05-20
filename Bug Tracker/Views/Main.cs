@@ -54,17 +54,7 @@ namespace Bug_Tracker.Views
             }
         }
 
-        private void SaveAsToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            SaveFileDialog saveFileDialog = new SaveFileDialog();
-            saveFileDialog.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.Personal);
-            saveFileDialog.Filter = "Text Files (*.txt)|*.txt|All Files (*.*)|*.*";
-            if (saveFileDialog.ShowDialog(this) == DialogResult.OK)
-            {
-                string FileName = saveFileDialog.FileName;
-            }
-        }
-
+     
         private void ExitToolsStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -250,10 +240,10 @@ namespace Bug_Tracker.Views
                 catch (Exception ex)
                 {
                     Console.WriteLine(ex.Message);
-                }
-                ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+               }
+               
+                
                 //image
-
 
                 if (!string.IsNullOrEmpty(imageName))
                 {
@@ -281,7 +271,6 @@ namespace Bug_Tracker.Views
                     }
                 }
 
-                ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
                 ////code
                 string c = fastColoredTextBox1.Text;
                 string codeFileName = DateTime.Now.Second.ToString();
@@ -317,8 +306,7 @@ namespace Bug_Tracker.Views
                 }
 
 
-                ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-                ////Link
+               ////Link
 
                 SourceControl sourceControl = new SourceControl
                 {
@@ -385,6 +373,52 @@ namespace Bug_Tracker.Views
         private void link_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             System.Diagnostics.Process.Start(link.Text);
+        }
+
+        private void saveToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            SaveFileDialog saveFileDialog = new SaveFileDialog();
+            saveFileDialog.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.Personal);
+            saveFileDialog.Filter = "Text Files (*.txt)|*.txt|All Files (*.*)|*.*";
+            if (saveFileDialog.ShowDialog(this) == DialogResult.OK)
+            {
+                string FileName = saveFileDialog.FileName;
+            }
+        }
+
+        private void undoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void redoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void optionsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void contentsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void indexToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void searchToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

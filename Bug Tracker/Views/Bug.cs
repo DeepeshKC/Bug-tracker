@@ -37,7 +37,6 @@ namespace Bug_Tracker.Views
             panelAssigned.AutoScroll = true;
 
             BugDAO bugDao = new BugDAO();
-            //timro class ko name dudyo k tehi vayera ho duitai yeutai vayo k tehi vayera
             try
             {
                 List<Bug_Tracker.Model.Bug> list = bugDao.getAllBugs();

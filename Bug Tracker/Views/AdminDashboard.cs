@@ -87,24 +87,6 @@ namespace Bug_Tracker.Views
                 comboBox1.Items.Add(l.ProgrammerId + "," + l.FullName);
             }
         }
-        
-
-        private void addUserToComapnyToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            new Register_Account().Show();
-        }
-
-        private void logoutToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            new LoginAdmin().Show();
-            this.Hide();
-            Program.adminId = 0;
-        }
-
-        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
 
         private void button3_Click(object sender, EventArgs e)
         {
@@ -125,10 +107,7 @@ namespace Bug_Tracker.Views
                 MessageBox.Show(ex.Message);
             }
         }
-        //maile close button haru haleko xaina milau hai tini haru chahi kaa ?
-        //maile pheri login garnu paryo vane program purai katera kholnu parxa k tyo maile ni milako xaina 
-        //timi mialaune vaye milau vanya k
-        //ok pa bug ko
+       
         private void button4_Click(object sender, EventArgs e)
         {
             string projectName = textBoxUpdate.Text;
@@ -155,7 +134,7 @@ namespace Bug_Tracker.Views
         {
             if (projectId == 0)
             {
-                MessageBox.Show("Plase select project name first");
+                MessageBox.Show("Please select project name first");
             }
             else
             {
@@ -214,7 +193,7 @@ namespace Bug_Tracker.Views
 
         private void addUserToComapnyToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
-
+            new Register_Account().Show();
         }
 
         private void AdminDashboard_Load_1(object sender, EventArgs e)
@@ -235,6 +214,18 @@ namespace Bug_Tracker.Views
 
             listBox1.Items.Clear();
             GetAllProgrammer();
+        }
+
+        private void logoutToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            new LoginAdmin().Show();
+            this.Hide();
+            Program.adminId = 0;
+        }
+
+        private void exitToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

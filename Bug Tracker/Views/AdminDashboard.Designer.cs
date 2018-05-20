@@ -49,20 +49,22 @@
             this.txtProjectName = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // textBoxUpdate
             // 
-            this.textBoxUpdate.Location = new System.Drawing.Point(15, 99);
+            this.textBoxUpdate.Location = new System.Drawing.Point(99, 72);
             this.textBoxUpdate.Name = "textBoxUpdate";
-            this.textBoxUpdate.Size = new System.Drawing.Size(235, 20);
+            this.textBoxUpdate.Size = new System.Drawing.Size(221, 20);
             this.textBoxUpdate.TabIndex = 26;
             // 
             // btnAdd
             // 
-            this.btnAdd.Location = new System.Drawing.Point(555, 69);
+            this.btnAdd.Location = new System.Drawing.Point(583, 106);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(45, 23);
             this.btnAdd.TabIndex = 25;
@@ -72,7 +74,7 @@
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(115, 69);
+            this.button4.Location = new System.Drawing.Point(99, 111);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(75, 23);
             this.button4.TabIndex = 24;
@@ -82,7 +84,7 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(12, 69);
+            this.button3.Location = new System.Drawing.Point(4, 111);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(75, 23);
             this.button3.TabIndex = 23;
@@ -92,7 +94,7 @@
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(253, 63);
+            this.button6.Location = new System.Drawing.Point(236, 113);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(75, 23);
             this.button6.TabIndex = 12;
@@ -112,9 +114,9 @@
             // listBox1
             // 
             this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(21, 63);
+            this.listBox1.Location = new System.Drawing.Point(21, 54);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(159, 225);
+            this.listBox1.Size = new System.Drawing.Size(188, 238);
             this.listBox1.TabIndex = 0;
             this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
@@ -123,25 +125,25 @@
             this.panel1.Controls.Add(this.button6);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.listBox1);
-            this.panel1.Location = new System.Drawing.Point(272, 130);
+            this.panel1.Location = new System.Drawing.Point(291, 135);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(516, 313);
             this.panel1.TabIndex = 22;
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(640, 74);
+            this.button2.Location = new System.Drawing.Point(659, 106);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(130, 23);
             this.button2.TabIndex = 21;
-            this.button2.Text = "Add new programmer";
+            this.button2.Text = "Add New Programmer";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(376, 71);
+            this.comboBox1.Location = new System.Drawing.Point(394, 108);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(173, 21);
             this.comboBox1.TabIndex = 20;
@@ -150,7 +152,7 @@
             // listView1
             // 
             this.listView1.FormattingEnabled = true;
-            this.listView1.Location = new System.Drawing.Point(12, 140);
+            this.listView1.Location = new System.Drawing.Point(12, 168);
             this.listView1.Name = "listView1";
             this.listView1.Size = new System.Drawing.Size(238, 303);
             this.listView1.TabIndex = 18;
@@ -163,6 +165,7 @@
             this.exitToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.E)));
             this.exitToolStripMenuItem.Size = new System.Drawing.Size(230, 22);
             this.exitToolStripMenuItem.Text = "Exit";
+            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click_1);
             // 
             // logoutToolStripMenuItem
             // 
@@ -170,6 +173,7 @@
             this.logoutToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.L)));
             this.logoutToolStripMenuItem.Size = new System.Drawing.Size(230, 22);
             this.logoutToolStripMenuItem.Text = "Logout";
+            this.logoutToolStripMenuItem.Click += new System.EventHandler(this.logoutToolStripMenuItem_Click_1);
             // 
             // addUserToComapnyToolStripMenuItem
             // 
@@ -192,11 +196,11 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(269, 74);
+            this.label2.Location = new System.Drawing.Point(320, 111);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(68, 13);
+            this.label2.Size = new System.Drawing.Size(71, 13);
             this.label2.TabIndex = 19;
-            this.label2.Text = "Programmers";
+            this.label2.Text = "Programmers:";
             // 
             // button1
             // 
@@ -220,9 +224,9 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(12, 36);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(61, 13);
+            this.label1.Size = new System.Drawing.Size(65, 13);
             this.label1.TabIndex = 14;
-            this.label1.Text = "Add project";
+            this.label1.Text = "Add Project:";
             // 
             // menuStrip1
             // 
@@ -230,15 +234,35 @@
             this.fileToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(817, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(819, 24);
             this.menuStrip1.TabIndex = 17;
             this.menuStrip1.Text = "menuStrip1";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(9, 149);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(91, 13);
+            this.label4.TabIndex = 27;
+            this.label4.Text = "List of the project:";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(1, 79);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(74, 13);
+            this.label5.TabIndex = 28;
+            this.label5.Text = "Project Name:";
             // 
             // AdminDashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(817, 472);
+            this.ClientSize = new System.Drawing.Size(819, 483);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.textBoxUpdate);
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.button4);
@@ -287,5 +311,7 @@
         private System.Windows.Forms.TextBox txtProjectName;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
     }
 }

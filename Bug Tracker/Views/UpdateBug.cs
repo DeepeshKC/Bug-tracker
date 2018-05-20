@@ -76,7 +76,7 @@ namespace Bug_Tracker.Views
 
         private void button4_Click(object sender, EventArgs e)
         {
-            //new SymptonsAndAssign().Show();
+            new SymptonsAndAssign().Show();
         }
 
         private void button2_Click(object sender, EventArgs e)
