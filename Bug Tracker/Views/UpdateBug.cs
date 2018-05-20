@@ -167,37 +167,37 @@ namespace Bug_Tracker.Views
 
         private void button5_Click(object sender, EventArgs e)
         {
-            //string codeFileName = bug.Codes.CodeFileName;
-            //string codeFilePath = bug.Codes.CodeFilePath;
-            //string c = fastColoredTextBox1.Text;
+            string codeFileName = bug.Codes.CodeFileName;
+            string codeFilePath = bug.Codes.CodeFilePath;
+            string c = fastColoredTextBox1.Text;
 
-            //FixerDAO fixerDAO = new FixerDAO();
-            //BugDAO bugDAO = new BugDAO();
+            FixerDAO fixerDAO = new FixerDAO();
+            BugDAO bugDAO = new BugDAO();
 
-            //Fixer fixer = new Fixer
-            //{
-            //    FixedBy = Login.userId,
-            //    BugId = Program.bugId
-            //};
+            Fixer fixer = new Fixer
+            {
+                FixedBy = Login.userId,
+                BugId = Program.bugId
+            };
 
-            //try
-            //{
-            //    fixerDAO.Insert(fixer);
-            //    bugDAO.BugFixed(Program.bugId);
-            //    MessageBox.Show("Oh great work");
-            //    this.Dispose();
-            //    new Bugs().Show();
-            //}
-            //catch (Exception ex)
-            //{
-            //    Console.WriteLine(ex.Message);
-            //}
+            try
+            {
+                fixerDAO.Insert(fixer);
+                bugDAO.BugFixed(Program.bugId);
+                MessageBox.Show("Oh great work");
+                this.Dispose();
+                new Bug().Show();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
 
-            //string path = "code/" + codeFileName + ".txt";
-            //using (StreamWriter sw = File.CreateText(path))
-            //{
-            //    sw.WriteLine(c);
-            //}
+            string path = "code/" + codeFileName + ".txt";
+            using (StreamWriter sw = File.CreateText(path))
+            {
+                sw.WriteLine(c);
+            }
 
          
 

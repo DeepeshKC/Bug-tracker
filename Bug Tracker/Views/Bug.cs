@@ -65,5 +65,27 @@ namespace Bug_Tracker.Views
             }
 
         }
+
+        private void menuToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void updateBugToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
+            new UpdateBug().Show();
+        }
+
+        private void logoutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
+            new Login().Show();
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

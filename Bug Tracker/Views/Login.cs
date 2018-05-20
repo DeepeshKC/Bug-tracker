@@ -60,9 +60,7 @@ namespace Bug_Tracker.Views
                     {
                         userId = new TesterDAO().IsLogin(username, password);
                         this.Hide();
-                        //new TesterDashboard().Show();
-                        //timle yo banako   xaiana 
-                        //yo banaye paxi tesle uncomment gara hai
+                        new TesterDashboard().Show();
                     }
                     else
                     {

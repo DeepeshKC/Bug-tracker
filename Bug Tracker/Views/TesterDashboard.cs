@@ -30,5 +30,27 @@ namespace Bug_Tracker.Views
             BugDAO bug = new BugDAO();
             loop.loopPanel(bug.getAllBugs(), panel1, this, new UpdateBug(false));
         }
+
+        private void bugToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new Bug().Show();
+        }
+
+        private void logoutToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            this.Dispose();
+            new Login().Show();
+        }
+
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            new Login().Show();
+        }
+
+        private void TesterDashboard_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

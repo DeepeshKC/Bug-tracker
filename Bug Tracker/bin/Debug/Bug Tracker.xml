@@ -1,0 +1,441 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Bug Tracker</name>
+    </assembly>
+    <members>
+        <member name="M:Bug_Tracker.Common.LoopPanel.loopPanel(System.Collections.Generic.List{Bug_Tracker.Model.Bug},System.Windows.Forms.Panel,System.Windows.Forms.Form,System.Windows.Forms.Form)">
+            <summary>
+            used to show all the bugs
+            </summary>
+            <param name="list"></param>
+            <param name="mainPanel"></param>
+            <param name="closingFrame"></param>
+            <param name="openingForm"></param>
+        </member>
+        <member name="M:Bug_Tracker.DAO.BugDAO.Delete(System.Int32)">
+            <summary>
+            used to delete bugs
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Bug_Tracker.DAO.BugDAO.GetById(System.Int32)">
+            <summary>
+            returns bugs by its id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Bug_Tracker.DAO.BugDAO.Insert(Bug_Tracker.Model.Bug)">
+            <summary>
+            insert new bugs
+            </summary>
+            <param name="t"></param>
+        </member>
+        <member name="M:Bug_Tracker.DAO.BugDAO.Update(Bug_Tracker.Model.Bug)">
+            <summary>
+            update bugs
+            </summary>
+            <param name="t"></param>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:Bug_Tracker.DAO.BugDAO.getAllBugs" -->
+        <member name="M:Bug_Tracker.DAO.BugDAO.GetAllBugsByProgrammerId(System.Int32)">
+            <summary>
+            returns programmer's related bug
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Bug_Tracker.DAO.BugDAO.BugFixed(System.Int32)">
+            <summary>
+            update bug status
+            </summary>
+            <param name="bugId"></param>
+        </member>
+        <member name="T:Bug_Tracker.DAO.GenericDAO`1">
+            <summary>
+            A generic class
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="M:Bug_Tracker.DAO.GenericDAO`1.Insert(`0)">
+            <summary>
+            method for inserting data into database
+            </summary>
+            <param name="t"></param>
+        </member>
+        <member name="M:Bug_Tracker.DAO.GenericDAO`1.Update(`0)">
+            <summary>
+            method for updating data in database
+            </summary>
+            <param name="t"></param>
+        </member>
+        <member name="M:Bug_Tracker.DAO.GenericDAO`1.Delete(System.Int32)">
+            <summary>
+            method for deleting data
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Bug_Tracker.DAO.GenericDAO`1.GetAll">
+            <summary>
+            returns all related data
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Bug_Tracker.DAO.GenericDAO`1.GetById(System.Int32)">
+            <summary>
+            returns specific data based on user id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Bug_Tracker.DAO.TesterDAO.Delete(System.Int32)">
+            <summary>
+            used for deleting tester
+            </summary>
+            <param name="id"></param>
+            <returns>bool</returns>
+        </member>
+        <member name="M:Bug_Tracker.DAO.TesterDAO.GetAll">
+            <summary>
+            used for getting all the tester information
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Bug_Tracker.DAO.TesterDAO.GetById(System.Int32)">
+            <summary>
+            used to get a specific user information based on their id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Bug_Tracker.DAO.TesterDAO.Insert(Bug_Tracker.Model.Tester)">
+            <summary>
+            used to insert new tester
+            </summary>
+            <param name="t"></param>
+        </member>
+        <member name="M:Bug_Tracker.DAO.TesterDAO.Update(Bug_Tracker.Model.Tester)">
+            <summary>
+            used to update tester information
+            </summary>
+            <param name="t"></param>
+        </member>
+        <member name="M:Bug_Tracker.DAO.TesterDAO.IsLogin(System.String,System.String)">
+            <summary>
+            used to allow tester to logged in a system
+            </summary>
+            <param name="username"></param>
+            <param name="password"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Bug_Tracker.DBConnection">
+            used to connect to database
+            
+            
+        </member>
+        <member name="F:Bug_Tracker.DBConnection.connectionString">
+            The Connection String includes parameters such as the name of the driver, 
+            Server name and Database name , as well as security information such as user name and password. 
+            
+            'connectionstr' is defined in App.config
+            
+        </member>
+        <member name="M:Bug_Tracker.DBConnection.GetConnection">
+            <summary>
+            connects sql query with connection string
+            </summary>
+            <returns>SqlConnection</returns>
+        </member>
+        <member name="F:Bug_Tracker.Form1.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Bug_Tracker.Form1.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Bug_Tracker.Form1.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:Bug_Tracker.Model.Assign">
+            <summary>
+            Model to assign task for programmer
+            </summary>
+        </member>
+        <member name="T:Bug_Tracker.Model.Bug">
+            <summary>
+            Model class used for tracking bug
+            </summary>
+        </member>
+        <member name="T:Bug_Tracker.Model.BugHistory">
+            <summary>
+            Model to save bug history
+            </summary>
+        </member>
+        <member name="T:Bug_Tracker.Model.BugInformation">
+            <summary>
+            model to save about bug information
+            </summary>
+        </member>
+        <member name="T:Bug_Tracker.Model.Code">
+            <summary>
+            Model class for saving code
+            </summary>
+        </member>
+        <member name="T:Bug_Tracker.Model.Fixer">
+            <summary>
+            Model to save about code fixer
+            </summary>
+        </member>
+        <member name="T:Bug_Tracker.Model.Image">
+            <summary>
+            Model for saving image about bug
+            </summary>
+        </member>
+        <member name="T:Bug_Tracker.Model.Programmer">
+            <summary>
+            Model class for saving information about programmer
+            </summary>
+        </member>
+        <member name="T:Bug_Tracker.Model.SourceControl">
+            <summary>
+            Model for saving details about source control
+            </summary>
+        </member>
+        <member name="T:Bug_Tracker.Model.Tester">
+            <summary>
+            Model class for saving information about tester
+            </summary>
+        </member>
+        <member name="M:Bug_Tracker.Program.Main">
+            <summary>
+            The main entry point for the application.
+            </summary>
+        </member>
+        <member name="F:Bug_Tracker.Views.AboutUs.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Bug_Tracker.Views.AboutUs.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Bug_Tracker.Views.AboutUs.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:Bug_Tracker.Views.AdminDashboard.GetAllProgrammers">
+            returns all the programmers
+        </member>
+        <member name="F:Bug_Tracker.Views.AdminDashboard.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Bug_Tracker.Views.AdminDashboard.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Bug_Tracker.Views.AdminDashboard.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:Bug_Tracker.Views.AdminRegister.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Bug_Tracker.Views.AdminRegister.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Bug_Tracker.Views.AdminRegister.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:Bug_Tracker.Views.Bug.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Bug_Tracker.Views.Bug.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Bug_Tracker.Views.Bug.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:Bug_Tracker.Views.Login.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Bug_Tracker.Views.Login.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Bug_Tracker.Views.Login.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:Bug_Tracker.Views.LoginAdmin.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Bug_Tracker.Views.LoginAdmin.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Bug_Tracker.Views.LoginAdmin.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:Bug_Tracker.Views.Main.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Bug_Tracker.Views.Main.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Bug_Tracker.Views.Main.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:Bug_Tracker.Views.Register_Account.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Bug_Tracker.Views.Register_Account.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Bug_Tracker.Views.Register_Account.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:Bug_Tracker.Views.CauseSymptomsAndAssign.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Bug_Tracker.Views.CauseSymptomsAndAssign.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Bug_Tracker.Views.CauseSymptomsAndAssign.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:Bug_Tracker.Views.TesterDashboard.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Bug_Tracker.Views.TesterDashboard.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Bug_Tracker.Views.TesterDashboard.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:Bug_Tracker.Views.UpdateBug.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Bug_Tracker.Views.UpdateBug.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Bug_Tracker.Views.UpdateBug.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:Bug_Tracker.Properties.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:Bug_Tracker.Properties.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:Bug_Tracker.Properties.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:Bug_Tracker.Properties.Resources.icons8_add_user_male_64">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:Bug_Tracker.Properties.Resources.Login_icon">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+    </members>
+</doc>

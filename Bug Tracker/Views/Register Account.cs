@@ -39,11 +39,15 @@ namespace Bug_Tracker.Views
                     {
                         new ProgrammerDAO().Insert(p);
                         MessageBox.Show("Account created");
+                        new Login().Show();
+                        this.Hide();
                     }
                     catch (Exception ex)
                     {
                         MessageBox.Show(ex.Message);
                         Console.WriteLine(ex.Message);
+                        new Login().Show();
+                        this.Hide();
                     }
                 }
                 else

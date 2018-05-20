@@ -176,5 +176,22 @@ namespace Bug_Tracker.Views
             //    Console.WriteLine(ex.Message);
             //}
         }
+
+        private void updateBugToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
+            new UpdateBug().Show();
+        }
+
+        private void logoutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
+            new Login().Show();
+        }
+
+        private void aboutUsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new AboutUs().Show();
+        }
     }
 }

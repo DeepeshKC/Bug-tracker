@@ -36,6 +36,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Debug\Bug Tracker.xml</DocumentationFile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -76,6 +77,7 @@
     <Compile Include="DAO\BugDAO.cs" />
     <Compile Include="DAO\BugInformationDAO.cs" />
     <Compile Include="DAO\CodeDAO.cs" />
+    <Compile Include="DAO\FixerDAO.cs" />
     <Compile Include="DAO\GenericDAO.cs" />
     <Compile Include="DAO\ImageDAO.cs" />
     <Compile Include="DAO\ProgrammerDAO.cs" />
