@@ -53,6 +53,12 @@
             </summary>
             <param name="bugId"></param>
         </member>
+        <member name="M:Bug_Tracker.DAO.FixerDAO.GetBugFixers">
+            <summary>
+            returns a name of bug fixer
+            </summary>
+            <returns></returns>
+        </member>
         <member name="T:Bug_Tracker.DAO.GenericDAO`1">
             <summary>
             A generic class

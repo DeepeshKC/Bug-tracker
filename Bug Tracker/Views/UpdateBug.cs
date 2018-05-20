@@ -311,6 +311,11 @@ namespace Bug_Tracker.Views
                 pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             }
         }
+
+        private void linkLabel1_LinkClicked_1(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            System.Diagnostics.Process.Start(linkLabel1.Text);
+        }
     }
     }
 

@@ -25,33 +25,7 @@ namespace Bug_Tracker.Views
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-            BugInformationDAO bugInformationDAO = new BugInformationDAO();
-            BugInformation bugInformation = new BugInformation
-            {
-                Cause = textBox2.Text,
-                Symtons = textBox1.Text,
-                BugId = Program.bugId
-            };
-
-
-            if (string.IsNullOrEmpty(textBox1.Text) || string.IsNullOrEmpty(textBox2.Text))
-            {
-                MessageBox.Show("You must add symptons and cause");
-            }
-            else
-            {
-                try
-                {
-                    bugInformationDAO.Insert(bugInformation);
-                    MessageBox.Show("Added");
-                    button1.Hide();
-                    button2.Show();
-                }
-                catch (Exception ex)
-                {
-                    Console.WriteLine(ex.Message);
-                }
-            }
+            
         }
 
         private void SymptonsAndAssign_Load(object sender, EventArgs e)
@@ -80,8 +54,6 @@ namespace Bug_Tracker.Views
             foreach (var l in list)
             {
                 comboBox1.Items.Add(l.ProgrammerId + "," + l.FullName);
-                //comboBox1.DisplayMember = l.FullName;
-                //comboBox1.ValueMember = l.ProgrammerId.ToString();
             }
 
             assignedUser();
@@ -160,21 +132,22 @@ namespace Bug_Tracker.Views
 
             id = Convert.ToInt32(s[0]);
 
-            //Assign assign = new Assign
-            //{
-            //    AssignBy = Program.userId,
-            //    AssignTo = id,
-            //    Description = textBox3.Text.ToString()
-            //};
+            Assign assign = new Assign
+            {
+                AssignBy = Program.userId,
+                AssignTo = id,
+                Description = textBox3.Text.ToString()
+            };
 
-            //try
-            //{
-            //    bugInformationDAO.Insert(assign);
-            //    MessageBox.Show("Task assigned");
-            //} catch(Exception ex)
-            //{
-            //    Console.WriteLine(ex.Message);
-            //}
+            try
+            {
+                bugInformationDAO.Insert(assign);
+                MessageBox.Show("Task assigned");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
         }
 
         private void updateBugToolStripMenuItem_Click(object sender, EventArgs e)
@@ -192,6 +165,37 @@ namespace Bug_Tracker.Views
         private void aboutUsToolStripMenuItem_Click(object sender, EventArgs e)
         {
             new AboutUs().Show();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            BugInformationDAO bugInformationDAO = new BugInformationDAO();
+            BugInformation bugInformation = new BugInformation
+            {
+                Cause = textBox2.Text,
+                Symtons = textBox1.Text,
+                BugId = Program.bugId
+            };
+
+
+            if (string.IsNullOrEmpty(textBox1.Text) || string.IsNullOrEmpty(textBox2.Text))
+            {
+                MessageBox.Show("You must add symptons and cause");
+            }
+            else
+            {
+                try
+                {
+                    bugInformationDAO.Insert(bugInformation);
+                    MessageBox.Show("Added");
+                    button1.Hide();
+                    button2.Show();
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine(ex.Message);
+                }
+            }
         }
     }
 }

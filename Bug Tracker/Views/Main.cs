@@ -210,7 +210,7 @@ namespace Bug_Tracker.Views
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            //timro tyo  name har u milena validation hatau baru.. k milena ra? maile paile ta sap ramrai name rakhya ho
             if (string.IsNullOrEmpty(comboBox1.SelectedItem.ToString()) || string.IsNullOrEmpty(textBox2.Text) || string.IsNullOrEmpty(textBox3.Text) || string.IsNullOrEmpty(textBox4.Text) || string.IsNullOrEmpty(textBox5.Text) || string.IsNullOrEmpty(textBox1.Text) || string.IsNullOrEmpty(textBox6.Text) || string.IsNullOrEmpty(textBox7.Text))
             {
                 MessageBox.Show("You must add all project information");

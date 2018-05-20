@@ -162,6 +162,7 @@
             this.button1.TabIndex = 18;
             this.button1.Text = "Add";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label2
             // 
@@ -223,14 +224,14 @@
             // updateBugToolStripMenuItem
             // 
             this.updateBugToolStripMenuItem.Name = "updateBugToolStripMenuItem";
-            this.updateBugToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.updateBugToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
             this.updateBugToolStripMenuItem.Text = "Update Bug";
             this.updateBugToolStripMenuItem.Click += new System.EventHandler(this.updateBugToolStripMenuItem_Click);
             // 
             // logoutToolStripMenuItem
             // 
             this.logoutToolStripMenuItem.Name = "logoutToolStripMenuItem";
-            this.logoutToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.logoutToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
             this.logoutToolStripMenuItem.Text = "Logout";
             this.logoutToolStripMenuItem.Click += new System.EventHandler(this.logoutToolStripMenuItem_Click);
             // 
