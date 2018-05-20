@@ -68,3 +68,5 @@ F:\Study\The British College\C#\Assignment\Bug Tracker\Bug Tracker\bin\Debug\Bug
 F:\Study\The British College\C#\Assignment\Bug Tracker\Bug Tracker\bin\Debug\Bug Tracker.pdb
 F:\Study\The British College\C#\Assignment\Bug Tracker\Bug Tracker\bin\Debug\FastColoredTextBox.xml
 F:\Study\The British College\C#\Assignment\Bug Tracker\Bug Tracker\obj\Debug\Bug Tracker.csproj.CopyComplete
+F:\Study\The British College\C#\Assignment\Bug Tracker\Bug Tracker\obj\Debug\Bug_Tracker.Views.CauseSymptomsAndAssign.resources
+F:\Study\The British College\C#\Assignment\Bug Tracker\Bug Tracker\obj\Debug\Bug_Tracker.Views.TesterDashboard.resources

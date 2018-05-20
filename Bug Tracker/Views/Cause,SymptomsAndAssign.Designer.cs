@@ -1,6 +1,6 @@
 ﻿namespace Bug_Tracker.Views
 {
-    partial class SymptonsAndAssign
+    partial class CauseSymptomsAndAssign
     {
         /// <summary>
         /// Required designer variable.
@@ -194,7 +194,7 @@
             this.label1.TabIndex = 14;
             this.label1.Text = "Symptoms of Bug:";
             // 
-            // SymptonsAndAssign
+            // CauseSymptomsAndAssign
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -213,8 +213,8 @@
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
-            this.Name = "SymptonsAndAssign";
-            this.Text = "SymptonsAndAssign";
+            this.Name = "CauseSymptomsAndAssign";
+            this.Text = "CauseSymptomsAndAssign";
             this.Load += new System.EventHandler(this.SymptonsAndAssign_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

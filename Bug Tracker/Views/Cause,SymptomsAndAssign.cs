@@ -11,13 +11,13 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 namespace Bug_Tracker.Views
 {
-    public partial class SymptonsAndAssign : Form
+    public partial class CauseSymptomsAndAssign : Form
     {
         int id = 0;
         private int programmerId = 0;
 
 
-        public SymptonsAndAssign()
+        public CauseSymptomsAndAssign()
         {
             InitializeComponent();
             this.StartPosition = FormStartPosition.CenterScreen;
